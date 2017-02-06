@@ -1,0 +1,5 @@
+xcuserdata
+bin/
+.DS_Store
+Debug/
+Release/
