@@ -23,7 +23,16 @@ void StructureController :: testIntArray()
     IntNodeArray temp = IntNodeArray(3);
     for(int spot = 0; spot < 3; spot++)
     {
-        cout << temp.getFromIndex(spot) << "is at " << spot << endl;
+        cout << temp.getFromIndex(spot) << " is at " << spot << endl;
+    }
+    
+    for(int spot = 0; spot < 3; spot++)
+    {
+        temp.setAtIndex(spot, spot);
+    }
+    for(int spot = 0; spot < temp.getSize(); spot++)
+    {
+        cout << temp.getFromIndex(spot) << " is at " << spot << endl;
     }
 }
 
