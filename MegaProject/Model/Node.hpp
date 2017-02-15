@@ -55,7 +55,7 @@ Node<Type> :: Node(Type value, Node<Type> * nextNode)
 template <class Type>
 Type Node<Type> :: getNodeData()
 {
-    return nodeData();
+    return nodeData;
 }
     
 template <class Type>
