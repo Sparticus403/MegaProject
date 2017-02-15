@@ -13,18 +13,25 @@
 #include "Node.hpp"
 
 template <class Type>
-class Node
+class Array
 {
 private:
     Node<Type> * front;
     int size;
 public:
+    Array<Type>();
     Array<Type>(int size);
     int getSize();
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
 };
 
+template <class Type>
+Array<Type> :: Array()
+{
+    //Do Not Use
+    //Implemented only for compilation purposes
+}
 /*
  Creates an Array of specified size by linking Node<Type> together.
  */
@@ -37,7 +44,7 @@ Array<Type> :: Array(int size)
     this->front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
-        Node<Type> * currentnode = new Node<Type>();
+        Node<Type> * currentNode = new Node<Type>();
         currentNode->setNodePointer(front);
         front = currentNode;
     }
@@ -49,6 +56,7 @@ int Array<Type> :: getSize()
     return size;
 }
 
+template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
@@ -64,6 +72,7 @@ Type Array<Type> :: getFromIndex(int index)
     return value;
 }
 
+template <class Type>
 void Array<Type> :: setAtIndex(int index, Type value)
 {
     assert(index >= 0 && index < size);

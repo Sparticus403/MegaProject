@@ -9,6 +9,7 @@
 #include "StructureController.hpp"
 #include <iostream>
 #include "IntNodeArray.hpp"
+#include "../Model/Timer.hpp"
 
 using namespace std;
 
@@ -16,6 +17,23 @@ StructureController :: StructureController()
 {
     wordNode = Node<string>("derpy");
     numberNode = Node<int>();
+    numberArray = Array<int>(1);
+}
+
+void StructureController :: testArrayTemplate()
+{
+    cout << "Array Template" << endl;
+    Timer arrayTimer;
+    arrayTimer.startTimer();
+    int test [9];
+    arrayTimer.stopTimer();
+    arrayTimer.displayTimerInformation();
+    arrayTimer.resetTimer();
+    arrayTimer.startTimer();
+    numberArray = Array<int>(9);
+    arrayTimer.stopTimer();
+    arrayTimer.displayTimerInformation();
+    
 }
 
 void StructureController :: testNodeTypes()
