@@ -11,6 +11,9 @@
 
 #include <assert.h>
 #include "Node.hpp"
+#include <iostream>
+
+using namespace std;
 
 template <class Type>
 class Array
@@ -21,7 +24,16 @@ private:
 public:
     Array<Type>();
     Array<Type>(int size);
-    int getSize();
+    
+    //Destructor
+    ~Array<Type>();
+    //copy Constructor
+    Array<Type>(const Array<Type> & toBeCopied);
+    //Assignment Operator overload
+    void operator = (const Array<Type> & toBeAssigned);
+    
+    int getSize() const;
+    Node<Type> * getFront() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
 };
@@ -51,7 +63,7 @@ Array<Type> :: Array(int size)
 }
 
 template <class Type>
-int Array<Type> :: getSize()
+int Array<Type> :: getSize() const
 {
     return size;
 }
@@ -83,6 +95,57 @@ void Array<Type> :: setAtIndex(int index, Type value)
         current = current->getNodePointer();
     }
     current->setNodeData(value);
+}
+
+template <class Type>
+Node<Type> * Array<Type> :: getFront() const
+{
+    return front;
+}
+
+template <class Type>
+Array<Type> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        //move to next node in array
+        front = front->getNodePointer();
+        cout << "Moving to the next node. At: " << count << endl;
+        //Delete the front pointer
+        delete remove;
+        cout << "Deleting the old front pointer." << endl;
+        //move delete to the new front
+        remove = front;
+        cout << "Moving to new front pointer." << endl;
+        count--;
+        cout << "Front is at: " << front << " count is: " << count << endl;
+    }
+}
+
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    //Build Data Structure
+    this->front = new Node<Type>();
+    for(int index = 1; index < size; index++)
+    {
+        Node<Type> * temp = new Node<Type>();
+        temp->setNodePointer(front);
+        front = temp;
+    }
+    
+    Node<Type> * copyTemp = toBeCopied.getFront();
+    Node<Type> * updated = this->front;
+    for(int index = 0; index < size; index++)
+    {
+        updated->setNodeData(copyTemp->getNodeData());
+        updated = updated->getNodePointer();
+        copyTemp = copyTemp->getNodePointer();
+    }
 }
 
 #endif /* Header_h */
