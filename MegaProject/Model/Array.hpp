@@ -22,7 +22,7 @@ private:
     Node<Type> * front;
     int size;
 public:
-    Array<Type>();
+    Array<Type>();
     Array<Type>(int size);
     
     //Destructor
@@ -41,8 +41,7 @@ public:
 template <class Type>
 Array<Type> :: Array()
 {
-    //Do Not Use
-    //Implemented only for compilation purposes
+    
 }
 /*
  Creates an Array of specified size by linking Node<Type> together.
@@ -76,7 +75,7 @@ Type Array<Type> :: getFromIndex(int index)
     Node<Type> * current = front;
     for(int position = 0; position < index; position++)
     {
-        current = current->getNodePointer;
+        current = current->getNodePointer();
     }
     
     value = current->getNodeData();

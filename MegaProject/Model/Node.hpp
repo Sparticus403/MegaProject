@@ -71,9 +71,9 @@ void Node<Type> :: setNodeData(Type value)
 }
 
 template <class Type>
-void Node<Type> :: setNodePointer(Node<Type> * next)
+void Node<Type> :: setNodePointer(Node<Type> * pointer)
 {
-    this->nodePointer = next;
+    this->nodePointer = pointer;
 }
     
 #endif /* Node_hpp */
