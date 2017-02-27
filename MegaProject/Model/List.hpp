@@ -18,14 +18,15 @@ class List
 private:
     int size;
     Node<Type> * front;
+    Node<Type> * end;
 public:
     //constructors
     List<Type>();
     List<Type>(const List<Type> & source);
-    ~List<Type>();
+    //~List<Type>();
     
     void addAtIndex(int index, Type value);
-    void addFront(Type value);
+    void addFront(Type value);
     void addEnd(Type value);
     Type remove(int index);
     Type setAtIndex(int index, Type data);
@@ -98,8 +99,8 @@ void List<Type> :: addAtIndex(int index, Type value)
     else
     {
         Node<Type> * insertedNode = new Node<Type>(value);
-        Node<Type> * currrent = front;
-        Node<Type. * previous = nullptr;
+        Node<Type> * current = front;
+        Node<Type> * previous = nullptr;
         for(int position = 0; position < index; position++)
         {
             previous = current;
@@ -107,12 +108,13 @@ void List<Type> :: addAtIndex(int index, Type value)
         }
         
         previous->setNodePointer(insertedNode);
-        InsertedNode->seetNodePointer(current);
+        insertedNode->seetNodePointer(current);
         
         size++;
     }
 }
 
+//don't know if this is right
 template <class Type>
 Type List<Type> :: setAtIndex(int index, Type data)
 {
@@ -122,18 +124,28 @@ Type List<Type> :: setAtIndex(int index, Type data)
 template <class Type>
 Type List<Type> :: getFromIndex(int index)
 {
+    assert(index >= 0 && index < size);
+    Type value;
+    Node<Type> * current = front;
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNodePointer();
+    }
     
+    value = current->getNodeData();
+    
+    return value;
 }
 
 template <class Type>
 Type List<Type> :: remove(int index)
 {
-    assert index >= 0 && index < size);
+    assert (index >= 0 && index < size);
     Type removed;
     
     Node<Type> * current = front;
     Node<Type> * previous = nullptr;
-    Node<Type * toBeRemoved = nullptr;
+    Node<Type> * toBeRemoved = nullptr;
     
     if(index == 0)
     {
