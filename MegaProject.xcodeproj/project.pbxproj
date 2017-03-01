@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		0E0D2DA71E5208FA00BE6D48 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
+		0E3481041E672E5F0018A44F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
 		0E3FD29F1E54AA94000C695F /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		0E3FD2A21E54B2C0000C695F /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		0E3FD2A31E54B2C0000C695F /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -55,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3481031E672DDC0018A44F /* Typed Data Sample */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */,
+				0EB489201E48D5EA001CA6C5 /* IntNode.hpp */,
+				0EFC136A1E4B72890080FE99 /* IntNodeArray.cpp */,
+				0EFC136B1E4B72890080FE99 /* IntNodeArray.hpp */,
+			);
+			name = "Typed Data Sample";
+			sourceTree = "<group>";
+		};
 		0EB4890C1E48D415001CA6C5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +97,13 @@
 			children = (
 				0E3FD2A21E54B2C0000C695F /* Timer.cpp */,
 				0E3FD2A31E54B2C0000C695F /* Timer.hpp */,
-				0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */,
-				0EB489201E48D5EA001CA6C5 /* IntNode.hpp */,
-				0EFC136A1E4B72890080FE99 /* IntNodeArray.cpp */,
-				0EFC136B1E4B72890080FE99 /* IntNodeArray.hpp */,
+				0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */,
+				0E3481031E672DDC0018A44F /* Typed Data Sample */,
 				0E0D2DA71E5208FA00BE6D48 /* Node.hpp */,
 				0E3FD29F1E54AA94000C695F /* Array.hpp */,
 				0E49B2271E5CA3AD00690926 /* List.hpp */,
 				0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */,
-				0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */,
+				0E3481041E672E5F0018A44F /* Stack.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
