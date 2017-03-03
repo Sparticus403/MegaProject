@@ -35,6 +35,9 @@
 		0E3FD2A31E54B2C0000C695F /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		0E49B2271E5CA3AD00690926 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		0EAD16601E69C927004CFC5F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
+		0EAD16611E69C937004CFC5F /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
+		0EAD16621E69C969004CFC5F /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		0EB489151E48D415001CA6C5 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		0EB489201E48D5EA001CA6C5 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -65,6 +68,17 @@
 				0EFC136B1E4B72890080FE99 /* IntNodeArray.hpp */,
 			);
 			name = "Typed Data Sample";
+			sourceTree = "<group>";
+		};
+		0EAD16631E69C979004CFC5F /* Inherits From DoublyLinked */ = {
+			isa = PBXGroup;
+			children = (
+				0E3481041E672E5F0018A44F /* Stack.hpp */,
+				0EAD16601E69C927004CFC5F /* Queue.hpp */,
+				0EAD16611E69C937004CFC5F /* CircularList.hpp */,
+				0EAD16621E69C969004CFC5F /* DoubleList.hpp */,
+			);
+			name = "Inherits From DoublyLinked";
 			sourceTree = "<group>";
 		};
 		0EB4890C1E48D415001CA6C5 = {
@@ -103,7 +117,7 @@
 				0E3FD29F1E54AA94000C695F /* Array.hpp */,
 				0E49B2271E5CA3AD00690926 /* List.hpp */,
 				0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */,
-				0E3481041E672E5F0018A44F /* Stack.hpp */,
+				0EAD16631E69C979004CFC5F /* Inherits From DoublyLinked */,
 			);
 			name = Model;
 			sourceTree = "<group>";
