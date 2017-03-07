@@ -111,12 +111,12 @@
 			children = (
 				0E3FD2A21E54B2C0000C695F /* Timer.cpp */,
 				0E3FD2A31E54B2C0000C695F /* Timer.hpp */,
-				0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */,
 				0E3481031E672DDC0018A44F /* Typed Data Sample */,
 				0E0D2DA71E5208FA00BE6D48 /* Node.hpp */,
 				0E3FD29F1E54AA94000C695F /* Array.hpp */,
 				0E49B2271E5CA3AD00690926 /* List.hpp */,
 				0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */,
+				0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */,
 				0EAD16631E69C979004CFC5F /* Inherits From DoublyLinked */,
 			);
 			name = Model;
