@@ -22,7 +22,7 @@ public:
     virtual void add(Type value) = 0;
     virtual Type remove(int index) = 0;
     DoublyLinkedList();
-    virtual ~DoubleLinkedList() = 0;
+    virtual ~DoublyLinkedList() = 0;
     
     int getSize() const;
     BiDirectionalNode<Type> * getFront() const;

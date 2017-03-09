@@ -37,7 +37,7 @@ template <class Type>
 Stack<Type> :: ~Stack()
 {
     BiDirectionalNode<Type> * remove = this->getFront();
-    while(This->getFront() !=nullptr)
+    while(this->getFront() !=nullptr)
     {
         this->setFront(this->getFront()->getNextPointer());
         delete remove;
@@ -65,7 +65,7 @@ void Stack<Type> :: add(Type valueToAdd)
 template <class Type>
 void Stack<Type> :: push(Type addedThing)
 {
-    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode(addedThing);
+    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
     
     if(this->size == 0 || this->getFront == nullptr || this->getEnd == nullptr)
     {
@@ -79,6 +79,7 @@ void Stack<Type> :: push(Type addedThing)
     this->setEnd(addToStack);
     this->setSize(this->getSize() + 1);
 }
+
 
 template <class Type>
 Type Stack<Type> :: remove(int index)

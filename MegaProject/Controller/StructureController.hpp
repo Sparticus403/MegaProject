@@ -11,6 +11,8 @@
 
 #include "../Model/Array.hpp"
 #include "../Model/Node.hpp"
+#include "../Model/DoubleList.hpp"
+#include "../Model/Stack.hpp"
 #include <string>
 using namespace std;
 
@@ -26,6 +28,8 @@ private:
     void testArrayTemplate();
     void testAdvancedFeatures();
     void testListIntro();
+    void testDoubleLists();
+    void testListTiming();
 public:
     StructureController();
     void start();
