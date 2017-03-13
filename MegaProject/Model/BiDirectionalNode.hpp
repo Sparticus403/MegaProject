@@ -72,5 +72,11 @@ void BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * pre
     this->previous = previous;
 }
 
+template <class Type>
+void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * nextPoiner)
+{
+    this->nextPointer = nextPointer;
+}
+
 
 #endif /* BiDirectionalNode_h */

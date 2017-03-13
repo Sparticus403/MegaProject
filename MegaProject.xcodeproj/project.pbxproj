@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E03246D1E76DA55006AF98C /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E03246B1E76DA55006AF98C /* Meme.cpp */; };
 		0E3FD2A41E54B2C0000C695F /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FD2A21E54B2C0000C695F /* Timer.cpp */; };
 		0EB489211E48D5EA001CA6C5 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */; };
 		0EFC136C1E4B72890080FE99 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC136A1E4B72890080FE99 /* IntNodeArray.cpp */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E03246B1E76DA55006AF98C /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		0E03246C1E76DA55006AF98C /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 		0E0D2DA71E5208FA00BE6D48 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		0E3481041E672E5F0018A44F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */,
 				0E3481021E6728D80018A44F /* DoublyLinkedList.hpp */,
 				0EAD16631E69C979004CFC5F /* Inherits From DoublyLinked */,
+				0E03246B1E76DA55006AF98C /* Meme.cpp */,
+				0E03246C1E76DA55006AF98C /* Meme.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				0EFC136E1E4B7D2E0080FE99 /* Runner.cpp in Sources */,
 				0EFC13711E4B7DA30080FE99 /* StructureController.cpp in Sources */,
 				0EB489211E48D5EA001CA6C5 /* IntNode.cpp in Sources */,
+				0E03246D1E76DA55006AF98C /* Meme.cpp in Sources */,
 				0E3FD2A41E54B2C0000C695F /* Timer.cpp in Sources */,
 				0EFC136C1E4B72890080FE99 /* IntNodeArray.cpp in Sources */,
 			);

@@ -147,3 +147,59 @@ void StructureController :: testListTiming()
     cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds" << endl;
     cout << "A time savings of: " << averageSlow - averageFast << " microseconds." << endl;
 }
+
+void StructureController :: testMemeQueue()
+{
+    Meme firstMeme("toddler fist! with pinwheel");
+    Meme datMeme("dat boi");
+    Meme oneMeme("we are number one");
+    
+    Queue<Meme> memeQueue;
+    memeQueue.add(firstMeme);
+    Meme secondMeme;
+    secondMeme.setDankness(8435);
+    memeQueue.enqueue(secondMeme);
+    memeQueue.add(datMeme);
+    memeQueue.add(oneMeme);
+    oneMeme.setMainstream(false);
+    oneMeme.setDankness(8700);
+    datMeme.setMainstream(false);
+    datMeme.setDankness(7500);
+    
+    
+    
+    Meme temp = memeQueue.dequeue();
+    cout << "This should be 8435 and is: " << temp.getDankness() << endl;
+    
+    cout << "This meme is " << oneMeme.getTitle() << ", and has a dankness level of " << oneMeme.getDankness() << ", and should be 8700" << endl;
+    
+    cout << "This meme is " << datMeme.getTitle() <<", and has a dankness level of " << datMeme.getDankness() << ", and should be 7500" << endl;
+}
+
+void StructureController :: testNumberStack()
+{
+    int firstNumb = 1;
+    int secondNumb = 2;
+    int thirdNumb = 3;
+    Stack<int> numberStack;
+    
+    numberStack.add(firstNumb);
+    
+    numberStack.push(secondNumb);
+    
+    numberStack.push(thirdNumb);
+    
+    cout << "The top number is: " << numberStack.peek() << endl;
+    
+    numberStack.pop();
+    
+    cout << "Now the top number is: " << numberStack.peek() << endl;
+    
+    numberStack.remove(firstNumb);
+    
+    /*
+    getSize
+     */
+    
+    
+}

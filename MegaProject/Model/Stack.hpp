@@ -67,13 +67,13 @@ void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
     
-    if(this->size == 0 || this->getFront == nullptr || this->getEnd == nullptr)
+    if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
         this->setFront(addToStack);
     }
     else
     {
-        this->end->setNextPointer(addToStack);
+        this->getEnd()->setNextPointer(addToStack);
         addToStack->setPreviousPointer(this->getEnd());
     }
     this->setEnd(addToStack);
@@ -92,7 +92,7 @@ template <class Type>
 Type Stack<Type> :: peek()
 {
     assert(this->getSize() > 0);
-    return this->end->getNodeData();
+    return this->getEnd()->getNodeData();
 }
 
 /*

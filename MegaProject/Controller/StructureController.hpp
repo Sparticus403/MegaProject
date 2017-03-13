@@ -13,6 +13,12 @@
 #include "../Model/Node.hpp"
 #include "../Model/DoubleList.hpp"
 #include "../Model/Stack.hpp"
+#include "../Model/Timer.hpp"
+#include "../Model/IntNodeArray.hpp"
+#include "../Model/List.hpp"
+#include "../Model/Queue.hpp"
+#include "../Model/Meme.hpp"
+#include "../Model/DoublyLinkedList.hpp"
 #include <string>
 using namespace std;
 
@@ -30,6 +36,8 @@ private:
     void testListIntro();
     void testDoubleLists();
     void testListTiming();
+    void testMemeQueue();
+    void testNumberStack();
 public:
     StructureController();
     void start();
