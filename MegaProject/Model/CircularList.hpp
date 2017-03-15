@@ -43,6 +43,13 @@ CircularList<Type> :: ~CircularList()
     }
 }
 
+/*
+ A helper method to cut the speed needed to get to a specific nod in the list.
+ Precondition: the index parameter is withein the range: size < index <= 0 as this method
+ will only be called after passing the assert call.
+ Return the node at the specified index.
+ */
+
 template <class Type>
 BiDirectionalNode<Type> * CircularList<Type> :: findNode(int index)
 {
