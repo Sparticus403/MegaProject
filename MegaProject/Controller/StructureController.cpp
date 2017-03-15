@@ -112,7 +112,7 @@ void StructureController :: testAdvancedFeatures()
 void StructureController :: testListTiming()
 {
     DoubleList<int> timingList;
-    for(int index = 0; index < 10000; index++);
+    for(int index = 0; index < 10000; index++)
     {
         timingList.add(rand());
     }
