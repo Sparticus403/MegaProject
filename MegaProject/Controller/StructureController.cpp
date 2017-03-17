@@ -160,13 +160,8 @@ void StructureController :: testMemeQueue()
     secondMeme.setDankness(8435);
     memeQueue.enqueue(secondMeme);
     memeQueue.add(datMeme);
-    memeQueue.add(oneMeme);
+    memeQueue.enqueue(oneMeme);
     oneMeme.setMainstream(false);
-    oneMeme.setDankness(8700);
-    datMeme.setMainstream(false);
-    datMeme.setDankness(7500);
-    
-    
     
     Meme temp = memeQueue.dequeue();
     cout << "This should be 8435 and is: " << temp.getDankness() << endl;
@@ -174,13 +169,14 @@ void StructureController :: testMemeQueue()
     cout << "This meme is " << oneMeme.getTitle() << ", and has a dankness level of " << oneMeme.getDankness() << ", and should be 8700" << endl;
     
     cout << "This meme is " << datMeme.getTitle() <<", and has a dankness level of " << datMeme.getDankness() << ", and should be 7500" << endl;
+    
 }
 
 void StructureController :: testNumberStack()
 {
     int firstNumb = 1;
     int secondNumb = 2;
-    int thirdNumb = 3;
+    int thirdNumb = 4;
     Stack<int> numberStack;
     
     numberStack.add(firstNumb);

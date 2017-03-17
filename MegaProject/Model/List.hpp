@@ -68,6 +68,12 @@ void List<Type> :: addFront(Type value)
 }
 
 template <class Type>
+int List<Type> :: getSize() const
+{
+    return size;
+}
+
+template <class Type>
 void List<Type> :: addEnd(Type data)
 {
     Node<Type> * added = new Node<Type>(data);
