@@ -24,6 +24,8 @@ public:
     void addAtIndex(int index, Type value);
     Type getFromIndex(int index);
     Type getFromIndexFast(int index);
+    int indexOf(Type itemToFind);
+    int nextIndexOf(Type item, int startingPoint);
 };
 
 template <class Type>
@@ -88,7 +90,6 @@ void DoubleList<Type> :: add(Type value)
     if(this->getSize() == 0)
     {
         this->setFront(addedNode);
-        
     }
     else
     {
@@ -120,6 +121,58 @@ Type DoubleList<Type> :: remove(int index)
     
     this->setSize(this->getSize() -1);
     return derp;
+}
+
+/*
+ loop over structure
+ Compare Node's data to parameter
+ If thy match return index to count of loop
+ Else continue
+ return invalid/not in list
+*/
+
+template <class Type>
+int DoubleList<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    BiDirectionalNode<Type> * searchPointer = this->getFront;
+    
+    for(int spot = 0; spot < this->getSize(); spot++)
+    {
+        if(findMe == searchPointer->getNodeData())
+        {
+            return spot;
+        }
+        searchPointer = searchPointer->getNextPointer();
+    }
+    
+    
+    return index;
+}
+
+template <class Type>
+int DoubleList<Type> :: nextIndexOf(Type value, int position)
+{
+    assert(position >=0 && position < this->getSize());
+    
+    int nextIndex = -1;
+    
+    BiDirectionalNode<Type> * current = this->getFront();
+    
+    for(int index = 0; index < this->getSize(); index++)
+    {
+        if(index >= position)
+        {
+            if(current->getNodeData() == value)
+            {
+                return index;
+            }
+            current = current->getNextPointer();
+        }
+    }
+    
+    return nextIndex;
 }
 
 #endif /* DoubleList_h */

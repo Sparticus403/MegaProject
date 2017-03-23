@@ -108,7 +108,7 @@ template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->getSize() > 0);
-    Type removedValue = this-> getFront()->getNodeData();
+    Type removedValue = this->getFront()->getNodeData();
     BiDirectionalNode<Type> * removeMe = this->getFront();
     
     if(this->getSize() == 1)

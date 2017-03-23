@@ -36,6 +36,8 @@ public:
     Node<Type> * getFront() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
+    int indexOf(Type itemToFind);
+    int nextIndexOf(Type item, int startingPoint);
 };
 
 template <class Type>
@@ -145,6 +147,47 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
         updated = updated->getNextPointer();
         copyTemp = copyTemp->getNextPointer();
     }
+}
+
+template <class Type>
+int Array<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    Node<Type> * searchPointer = this->getFront;
+    
+    for(int spot = 0; spot < this->getSize(); spot++)
+    {
+        if(findMe == searchPointer->getNodeData())
+        {
+            return spot;
+        }
+        searchPointer = searchPointer->getNextPointer();
+    }
+    
+    return index;
+}
+
+template <class Type>
+int Array<Type> :: nextIndexOf(Type value, int position)
+{
+    assert(position >= 0 && position < this->getSize());
+    int nextIndex = -1;
+    
+    Node<Type> * current = this->getFront();
+    for(int index = 0; index < this->getSize(); index++)
+    {
+        if(index >= position)
+        {
+            if(current->getNodeData() == value)
+            {
+                return index;
+            }
+            current = current->getNextPointer();
+        }
+    }
+    
+    return nextIndex;
 }
 
 #endif /* Header_h */
