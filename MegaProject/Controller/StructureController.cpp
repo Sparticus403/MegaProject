@@ -19,7 +19,7 @@ StructureController :: StructureController()
 {
     wordNode = Node<string>("derpy");
     numberNode = Node<int>();
-    numberArray = Array<int>(1);
+   // numberArray = Array<int>(1);
 }
 
 void StructureController :: testArrayTemplate()
@@ -27,12 +27,12 @@ void StructureController :: testArrayTemplate()
     cout << "Array Template" << endl;
     Timer arrayTimer;
     arrayTimer.startTimer();
-    int test [9];
+    //int test [9];
     arrayTimer.stopTimer();
     arrayTimer.displayTimerInformation();
     arrayTimer.resetTimer();
     arrayTimer.startTimer();
-    numberArray = Array<int>(9);
+    //numberArray = Array<int>(9);
     arrayTimer.stopTimer();
     arrayTimer.displayTimerInformation();
     

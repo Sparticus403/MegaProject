@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E03246D1E76DA55006AF98C /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E03246B1E76DA55006AF98C /* Meme.cpp */; };
 		0E3FD2A41E54B2C0000C695F /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FD2A21E54B2C0000C695F /* Timer.cpp */; };
+		0EB21DE41E8BF08900F34F02 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB21DE21E8BF08900F34F02 /* FileController.cpp */; };
+		0EB21DE71E8BF40800F34F02 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB21DE51E8BF40800F34F02 /* CrimeData.cpp */; };
 		0EB489211E48D5EA001CA6C5 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */; };
 		0EFC136C1E4B72890080FE99 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC136A1E4B72890080FE99 /* IntNodeArray.cpp */; };
 		0EFC136E1E4B7D2E0080FE99 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC136D1E4B7D2E0080FE99 /* Runner.cpp */; };
@@ -41,6 +43,10 @@
 		0EAD16601E69C927004CFC5F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		0EAD16611E69C937004CFC5F /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		0EAD16621E69C969004CFC5F /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
+		0EB21DE21E8BF08900F34F02 /* FileController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileController.cpp; path = Controller/FileController.cpp; sourceTree = "<group>"; };
+		0EB21DE31E8BF08900F34F02 /* FileController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FileController.hpp; path = Controller/FileController.hpp; sourceTree = "<group>"; };
+		0EB21DE51E8BF40800F34F02 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
+		0EB21DEB1E8BF55000F34F02 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
 		0EB489151E48D415001CA6C5 /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB4891F1E48D5EA001CA6C5 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		0EB489201E48D5EA001CA6C5 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 				0EAD16631E69C979004CFC5F /* Inherits From DoublyLinked */,
 				0E03246B1E76DA55006AF98C /* Meme.cpp */,
 				0E03246C1E76DA55006AF98C /* Meme.hpp */,
+				0EB21DE51E8BF40800F34F02 /* CrimeData.cpp */,
+				0EB21DEB1E8BF55000F34F02 /* CrimeData.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -133,6 +141,8 @@
 				0EFC136D1E4B7D2E0080FE99 /* Runner.cpp */,
 				0EFC136F1E4B7DA30080FE99 /* StructureController.cpp */,
 				0EFC13701E4B7DA30080FE99 /* StructureController.hpp */,
+				0EB21DE21E8BF08900F34F02 /* FileController.cpp */,
+				0EB21DE31E8BF08900F34F02 /* FileController.hpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,11 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB21DE71E8BF40800F34F02 /* CrimeData.cpp in Sources */,
 				0EFC136E1E4B7D2E0080FE99 /* Runner.cpp in Sources */,
 				0EFC13711E4B7DA30080FE99 /* StructureController.cpp in Sources */,
 				0EB489211E48D5EA001CA6C5 /* IntNode.cpp in Sources */,
 				0E03246D1E76DA55006AF98C /* Meme.cpp in Sources */,
 				0E3FD2A41E54B2C0000C695F /* Timer.cpp in Sources */,
+				0EB21DE41E8BF08900F34F02 /* FileController.cpp in Sources */,
 				0EFC136C1E4B72890080FE99 /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
