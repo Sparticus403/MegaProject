@@ -234,7 +234,7 @@ void CrimeData :: setYear(const int & year)
     this->year = year;
 }
 
-bool CrimeData :: operator < (const CrimeData & comparedData)
+bool CrimeData :: operator < (const CrimeData & comparedData) //Checks to see if the there is less crime
 {
     bool thisIsLessCrime = false;
     double comparisonFactor = 0.0;
@@ -305,7 +305,7 @@ bool CrimeData :: operator < (const CrimeData & comparedData)
     return thisIsLessCrime;
 }
 
-bool CrimeData :: operator > (const CrimeData & comparedData)
+bool CrimeData :: operator > (const CrimeData & comparedData) //checks to find if there is more crime.
 {
     bool thisIsMoreCrime = false;
     double comparisonFactor = 0.0;
@@ -374,4 +374,11 @@ bool CrimeData :: operator > (const CrimeData & comparedData)
         thisIsMoreCrime = true;
     }
     return thisIsMoreCrime;
+}
+
+bool CrimeData :: operator == (const CrimeData & compared) //checks if the crime rates are the same.
+{
+    bool isThisTheSame = !(*this < compared) && !(*this > compared);
+    
+    return isThisTheSame;
 }
