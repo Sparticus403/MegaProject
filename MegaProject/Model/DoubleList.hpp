@@ -50,7 +50,7 @@ DoubleList<Type> :: ~DoubleList()
 template <class Type>
 Type DoubleList<Type> :: getFromIndex(int index)
 {
-    assert(index >= 0 && index < this->getSize());
+    //assert(index >= 0 && index < this->getSize());
     Type valueAtIndex;
     
     BiDirectionalNode<Type> * reference = this->getFront();
