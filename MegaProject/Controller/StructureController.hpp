@@ -19,7 +19,10 @@
 #include "../Model/Queue.hpp"
 #include "../Model/Meme.hpp"
 #include "../Model/DoublyLinkedList.hpp"
+#include "../Model/BinarySearchTree.hpp"
 #include <string>
+
+
 using namespace std;
 
 class StructureController
@@ -28,6 +31,7 @@ private:
     Node<int> numberNode;
     Node<string> wordNode;
     Array<int> numberArray;
+    Node<int> numbers;
     
     void testIntArray();
     void testNodeTypes();
@@ -38,6 +42,7 @@ private:
     void testListTiming();
     void testMemeQueue();
     void testNumberStack();
+    void testBinarySearchTreeOperations();
 public:
     StructureController();
     void start();
