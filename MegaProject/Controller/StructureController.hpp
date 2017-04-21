@@ -20,6 +20,9 @@
 #include "../Model/Meme.hpp"
 #include "../Model/DoublyLinkedList.hpp"
 #include "../Model/BinarySearchTree.hpp"
+#include "FileController.cpp"
+#include "../Model/AVLTree.h"
+#include "../Model/CrimeData.hpp"
 #include <string>
 
 
@@ -43,6 +46,9 @@ private:
     void testMemeQueue();
     void testNumberStack();
     void testBinarySearchTreeOperations();
+    void testBinarySearchData();
+    void testAVLTreeOperations();
+    void testAVLData();
 public:
     StructureController();
     void start();
