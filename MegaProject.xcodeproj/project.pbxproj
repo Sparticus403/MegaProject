@@ -45,6 +45,8 @@
 		0E4D52271E9D2A0700648F56 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
 		0E5053C91E648D1E002ED3B6 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		0E7F79BE1EA7B172005B0E59 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AVLTree.h; path = Model/AVLTree.h; sourceTree = "<group>"; };
+		0EA031941EB77A4700C701C9 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
+		0EA031961EB784DF00C701C9 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
 		0EAD16601E69C927004CFC5F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		0EAD16611E69C937004CFC5F /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		0EAD16621E69C969004CFC5F /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		0EB489221E48D634001CA6C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0EA031941EB77A4700C701C9 /* HashTable.hpp */,
 				0E3FD2A21E54B2C0000C695F /* Timer.cpp */,
 				0E3FD2A31E54B2C0000C695F /* Timer.hpp */,
 				0E3481031E672DDC0018A44F /* Typed Data Sample */,
@@ -157,6 +160,7 @@
 				0E4D52261E9D24FA00648F56 /* Tree.hpp */,
 				0E4D52271E9D2A0700648F56 /* BinarySearchTree.hpp */,
 				0E7F79BE1EA7B172005B0E59 /* AVLTree.h */,
+				0EA031961EB784DF00C701C9 /* HashNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
