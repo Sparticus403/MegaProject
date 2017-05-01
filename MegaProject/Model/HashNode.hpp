@@ -21,7 +21,7 @@ public:
     
     Type getData();
     long getKey() const;
-    void setData();
+    void setData(Type data);
 };
 
 template <class Type>
@@ -50,7 +50,7 @@ Type HashNode<Type> :: getData()
 }
 
 template <class Type>
-void HashNode<Type> :: setData()
+void HashNode<Type> :: setData(Type data)
 {
     this->data = data;
 }
